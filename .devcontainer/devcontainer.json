@@ -3,12 +3,17 @@
 {
 	"name": "Rust",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/rust:0-1-bullseye",
-	//"dockerFile" : "Dockerfile",
-	"features": {
-		"ghcr.io/devcontainers/features/git:1": {},
-		"ghcr.io/devcontainers/features/rust:1": {}
+	//"image": "mcr.microsoft.com/devcontainers/rust:0-1-bullseye",
+	"dockerFile": "Dockerfile",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"rust-lang.rust-analyzer",
+				"lanza.lldb-vscode"
+			]
+		}
 	}
+
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 

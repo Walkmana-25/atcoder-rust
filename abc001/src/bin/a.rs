@@ -55,7 +55,7 @@ macro_rules! read_value {
 
 fn main() {
     println!("Hello World");
-    let a : i32 = 1;
-    a + 1;
+    let _a : i32 = 1;
 
+    println!("Hello World");
 }
