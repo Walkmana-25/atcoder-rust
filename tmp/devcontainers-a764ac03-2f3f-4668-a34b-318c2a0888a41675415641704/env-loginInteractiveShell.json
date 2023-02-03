@@ -1,0 +1,15 @@
+{
+	"HOSTNAME": "31c80cf9a06d",
+	"REMOTE_CONTAINERS_IPC": "/tmp/vscode-remote-containers-ipc-73644a2f90434993811a41d3743816c0089249c9.sock",
+	"HOME": "/home/vscode",
+	"LS_COLORS": "",
+	"CARGO_HOME": "/usr/local/cargo",
+	"RUSTUP_HOME": "/usr/local/rustup",
+	"REMOTE_CONTAINERS_SOCKETS": "[\"/tmp/vscode-ssh-auth-73644a2f90434993811a41d3743816c0089249c9.sock\",\"/tmp/.X11-unix/X0\",\"/home/vscode/.gnupg/S.gpg-agent\"]",
+	"USER": "vscode",
+	"SHLVL": "1",
+	"PROMPT_DIRTRIM": "4",
+	"RUST_VERSION": "1.66.1",
+	"PATH": "/usr/local/cargo/bin:/usr/local/cargo/bin:/usr/local/cargo/bin:/usr/local/cargo/bin:/usr/local/cargo/bin:/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/vscode/.local/bin",
+	"_": "/bin/cat"
+}
