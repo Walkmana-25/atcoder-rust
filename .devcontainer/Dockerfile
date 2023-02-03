@@ -15,11 +15,14 @@ RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs > ${RUST_HOME}/rus
     && chmod +x ${RUST_HOME}/rustup.sh \
     && ${RUST_HOME}/rustup.sh -y  --no-modify-path
 ENV PATH $PATH:$CARGO_HOME/bin
-RUN apt-get update && apt-get install git lldb build-essential -y
-RUN cargo install cargo-compete
+RUN ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+RUN echo Asia/Tokyo > /etc/timezone
+RUN apt-get update && apt-get install git lldb build-essential libssl-dev pkg-config -y
 WORKDIR /workspaces/atcoder-rust/
 RUN rustup install 1.42.0
+RUN rustup update
 COPY pass.txt /tmp/
+RUN cargo install cargo-compete
 RUN cat /tmp/pass.txt | cargo compete login atcoder
 
 CMD ["sleep","infinity"]
