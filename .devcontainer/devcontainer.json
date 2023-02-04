@@ -10,7 +10,8 @@
 			"extensions": [
 				"rust-lang.rust-analyzer",
 				"lanza.lldb-vscode",
-				"vadimcn.vscode-lldb"
+				"vadimcn.vscode-lldb",
+				"bungcip.better-toml"
 			]
 		}
 	}
