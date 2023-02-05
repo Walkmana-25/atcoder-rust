@@ -52,5 +52,18 @@ macro_rules! read_value {
 }
 
 fn main() {
+    input!{
+        n : usize,
+        c : [i64; n],
+    }
+    let mut c  = c.clone();
+    c.sort();
+    let mut ans = 1;
 
+    for (i, cc) in c.iter().enumerate() {
+        ans *= std::cmp::max(0, cc - i as i64) ;
+        ans %= 1_000_000_007;
+    }
+
+    println!("{}", ans);
 }
