@@ -55,17 +55,25 @@ macro_rules! read_value {
 fn main() {
     input!(
         n : usize,
+        v : [String; n],
     );
     let mut dp = vec![vec![0; n];n];
     dp[0][0] = 1;
 
     for i in 0..n {
         for j in 0..n{
-            if i != 0 {
-                dp[i][j] += dp[i - 1][j]; 
-            }
-            if j != 0 {
-                dp[i][j] += dp[i][j - 1];
+            let a : Vec<char> = v[i].chars().collect();
+            if a[j] == '.' {
+
+                if i != 0 {
+                    let b : Vec<char> = v[i - 1].chars().collect();
+                    if b[j] == '.' {
+                        dp[i][j] += dp[i - 1][j]; 
+                    }
+                }
+                if j != 0 && a[j - 1] == '.'{
+                    dp[i][j] += dp[i][j - 1];
+                }
             }
 
         }
