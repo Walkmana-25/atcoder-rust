@@ -21,8 +21,8 @@ RUN apt-get update && apt-get install git lldb build-essential libssl-dev pkg-co
 WORKDIR /workspaces/atcoder-rust/
 RUN rustup install 1.42.0
 RUN rustup update
-COPY pass.txt /tmp/
+#COPY pass.txt /tmp/
 RUN cargo install cargo-compete
-RUN cat /tmp/pass.txt | cargo compete login atcoder
+#RUN cat /tmp/pass.txt | cargo compete login atcoder
 
 CMD ["sleep","infinity"]
