@@ -11,7 +11,8 @@
 				"rust-lang.rust-analyzer",
 				"lanza.lldb-vscode",
 				"vadimcn.vscode-lldb",
-				"bungcip.better-toml"
+				"bungcip.better-toml",
+				"amazonwebservices.aws-toolkit-vscode"
 			]
 		}
 	}
