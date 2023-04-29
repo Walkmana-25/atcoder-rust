@@ -12,5 +12,5 @@
 **/*.rs.bk
 pass.txt
 *.out
-/tmp/
+tmp/
 *.o
