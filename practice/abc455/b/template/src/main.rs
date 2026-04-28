@@ -17,7 +17,7 @@ fn main() {
                     let mut flag: bool = true;
                     
                         for i in h1..h2 + 1 {
-                            for j in  w1..w1 + 1{
+                            for j in  w1..w2 + 1{
                                 let a = s[i - 1].chars().nth(j - 1).unwrap();
                                 let b = s[h1 + h2 - i - 1].chars().nth(w1 + w2 - j - 1).unwrap();
                                 
