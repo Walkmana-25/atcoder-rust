@@ -1,5 +1,7 @@
 [workspace]
-members = []
+members = [
+    "practice/abc455/a/template",
+]
 resolver = "2"
 
 exclude = [
