@@ -12,7 +12,8 @@
 				"lanza.lldb-vscode",
 				"vadimcn.vscode-lldb",
 				"bungcip.better-toml",
-				"amazonwebservices.aws-toolkit-vscode"
+				"amazonwebservices.aws-toolkit-vscode",
+				"Ryosuke-Asano.zai-vscode-chat"
 			]
 		}
 	},

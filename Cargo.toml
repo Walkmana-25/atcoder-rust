@@ -1,0 +1,20 @@
+[workspace]
+members = []
+resolver = "2"
+
+exclude = [
+    "template",
+    "apg4b",
+    "practice",
+    "recommendation/abc044",
+    "recommendation/abc179",
+    "recommendation/abc181",
+    "recommendation/abc189",
+    "recommendation/abc195",
+    "recommendation/abc209",
+    "recommendation/abc288",
+    "recommendation/agc041",
+    "recommendation/agc046",
+    "recommendation/arc133",
+    "recommendation/arc152",
+]
